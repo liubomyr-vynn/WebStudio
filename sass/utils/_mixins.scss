@@ -1,0 +1,22 @@
+@mixin section($padding-top: 94px, $padding-bottom: 94px) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+@mixin fonts($weight: false, $size: false, $colour: false, $lh: false, $ls: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    colour: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}

@@ -1,0 +1,33 @@
+.activity {
+  @include section;
+}
+
+.activity__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity__item {
+  position: relative;
+}
+
+.activity__label {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  min-height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  align-items: center;
+  justify-content: center;
+
+  @include fonts(700, 14px, false, calc(16 / 14), 0.03em);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background: rgba(47, 48, 58, 0.8);
+}

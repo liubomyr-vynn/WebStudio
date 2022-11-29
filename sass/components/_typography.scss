@@ -1,0 +1,15 @@
+.section__title {
+  margin-bottom: 50px;
+
+  @include fonts(700, 36px, false, calc(42 / 36), 0.03em);
+
+  text-align: center;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+
+  @include fonts(700, 26px, false, calc(31 / 26), 0.03em);
+
+  color: var(--accent);
+}
