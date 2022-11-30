@@ -4,4 +4,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+
+  @media screen and (min-width: var(--phone)) {
+    width: var(--phone);
+  }
+
+  @media screen and (min-width: var(--tablet)) {
+    width: var(--tablet);
+  }
+
+  @media screen and (min-width: var(--desctop)) {
+    width: var(--desctop);
+  }
 }
