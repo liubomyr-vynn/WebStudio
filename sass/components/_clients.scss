@@ -1,17 +1,21 @@
 .clients {
-  @include section;
+  @extend %section;
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .clients__link {
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  // padding: 16px 32px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -25,5 +29,13 @@
     fill: var(--accent);
     border: 1px solid var(--accent);
   }
-}
 
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 170px;
+    flex-wrap: nowrap;
+  }
+}
