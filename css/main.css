@@ -33,12 +33,12 @@
   margin: -1px;
 }
 
-.features {
+.activity, .features {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .features {
+  .activity, .features {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -421,9 +421,10 @@ img {
   color: var(--secondary-text);
 }
 
-.activity {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
 }
 
 .activity__list {
