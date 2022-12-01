@@ -11,6 +11,12 @@
   }
 }
 
+.features__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
 .features__item {
   @media screen and (min-width: 768px) {
     width: calc((100% - 1 * 30px) / 2);
@@ -41,6 +47,10 @@
 
   @include fonts(700, 14px, false, calc(16 / 14), 0.03em);
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__text {
