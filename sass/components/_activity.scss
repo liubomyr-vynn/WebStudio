@@ -1,5 +1,9 @@
 .activity {
-  @include section;
+  @extend %section;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .activity__list {
