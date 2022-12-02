@@ -5,21 +5,34 @@
 }
 
 .footer__container {
-  display: flex;
   align-items: baseline;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .footer__contacts {
-  width: 231px;
+  text-align: center;
+  margin-bottom: 60px;
 
   @include fonts(false, 14px, false, calc(24 / 14), 0.03em);
 
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
-  display: flex;
+  display: block;
+
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__logo--theme-white {
@@ -27,6 +40,7 @@
 }
 
 .adress {
+  display: block;
   font-style: normal;
 }
 
@@ -76,7 +90,14 @@
 }
 
 .footer__socials {
-  margin-right: 93px;
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 93px;
+  }
 }
 
 .socials__title {
@@ -86,7 +107,7 @@
 
   text-transform: uppercase;
   color: #ffffff;
-  margin-right: auto;
+  margin-right: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -109,34 +130,57 @@
   gap: 10px;
 }
 
+.footer__subscription {
+  text-align: center;
+}
+
 .subscription__title {
   @include fonts(700, 14px, false, calc(16 / 14), 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+
   margin-bottom: 20px;
 }
 
 .footer__form {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscription__label {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
 
 .subscription__input {
+  display: block;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   outline: unset;
-  margin-right: 12px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 
   transition-property: border-color;
   transition-duration: var(--duration);
