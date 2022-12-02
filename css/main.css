@@ -226,6 +226,10 @@ img {
   color: var(--logo-header);
 }
 
+.nav {
+  display: none;
+}
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,7 +277,7 @@ img {
 }
 
 .contacts {
-  margin-left: auto;
+  display: none;
 }
 
 .contacts__list {
@@ -619,7 +623,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
-    width: 170px;
+    max-width: 170px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
