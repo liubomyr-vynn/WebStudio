@@ -12,6 +12,10 @@
   color: var(--logo-header);
 }
 
+.nav {
+  display: none;
+}
+
 .nav__list {
   display: flex;
 }
@@ -56,7 +60,8 @@
 }
 
 .contacts {
-  margin-left: auto;
+  display: none;
+  // margin-left: auto;
 }
 
 .contacts__list {
