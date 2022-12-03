@@ -60,7 +60,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--white-color);
   z-index: 999;
 
   transform: translateX(100%);
@@ -75,7 +75,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: --logo-header;
 }
 
 .mobile-menu {
@@ -83,13 +83,22 @@
   margin: 0;
   list-style: none;
   margin-bottom: auto;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #212121;
   text-decoration: none;
+}
+
+.mobile-contacts {
+  margin-bottom: 64px;
 }
 
 .mobile-socials {
