@@ -1,12 +1,23 @@
 .portfolio {
-  @include section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200x) {
+    @include section;
+  }
 }
 
 .filter__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+
+  justify-content: left;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__btn {
@@ -38,6 +49,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 1 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
 }
 
 .portfolio__thumb {
