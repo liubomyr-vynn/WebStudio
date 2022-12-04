@@ -24,13 +24,17 @@
 .modal {
   display: block;
   position: relative;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 
   animation-duration: 0.6s;
   animation-fill-mode: both;
@@ -70,11 +74,13 @@
 
 .modal__title {
   display: block;
-
-  font-size: 20px;
-  line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
+
+  @include fonts(700, 20px, false, calc(30 / 20), 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(700, 20px, false, calc(23 / 20), 0.03em);
+  }
 
   margin-bottom: 12px;
 }
@@ -200,6 +206,12 @@
   user-select: none;
 
   margin-bottom: 30px;
+
+  @include fonts(400, 12px, false, calc(14 / 12), 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(400, 14px, false, calc(24 / 14), 0.03em);
+  }
 }
 
 .modal__agreement-link {
