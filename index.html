@@ -58,12 +58,6 @@
         </ul>
       </div>
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <!-- <svg class="menu-toggle--burger" width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path>
-        </svg> -->
         <svg width="40px" height="40px">
           <use href="./images/sprite.svg#mobile-menu"></use>
         </svg>
@@ -147,15 +141,27 @@
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="activity__list list">
           <li class="activity__item">
-            <img src="./images/webstudio/desktop.jpg" alt="Веб-дизайн для ПК" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/activity/img-1_lg@1x.jpg 1x, ./images/activity/img-1_lg@2x.jpg 2x" />
+              <img src="./images/activity/img-1_md@1x.jpg" alt="Веб-дизайн для ПК" width="370" loading="lazy" />
+            </picture>
             <p class="activity__label">Десктопні додатки</p>
           </li>
           <li class="activity__item">
-            <img src="./images/webstudio/mobile.jpg" alt="Веб-дизайн для смартфонів" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/activity/img-2_lg@1x.jpg 1x, ./images/activity/img-2_lg@2x.jpg 2x" />
+              <img src="./images/activity/img-2_md@1x.jpg" alt="Веб-дизайн для смартфонів" width="370" loading="lazy" />
+            </picture>
             <p class="activity__label">Мобільні додатки</p>
           </li>
           <li class="activity__item">
-            <img src="./images/webstudio/tab.jpg" alt="Веб-дизайн для планшетів" width="370" />
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./images/activity/img-3_lg@1x.jpg 1x, ./images/activity/img-3_lg@2x.jpg 2x" />
+              <img src="./images/activity/img-3_md@1x.jpg" alt="Веб-дизайн для планшетів" width="370" loading="lazy" />
+            </picture>
             <p class="activity__label">Дизайнерські рішення</p>
           </li>
         </ul>
