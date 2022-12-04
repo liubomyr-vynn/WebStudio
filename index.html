@@ -169,7 +169,20 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="team__item">
-            <img class="team__img" src="./images/webstudio/ihordemianenko.jpg" alt="Фото Ігор Дем'яненко" />
+
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)"
+                srcset="./images/team/img-1_lg@1x.jpg 1x, ./images/team/img-1_lg@2x.jpg 2x" />
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)"
+                srcset="./images/team/img-1_md@1x.jpg 1x, ./images/team/img-1_md@2x.jpg 2x" />
+              <!-- phone screen -->
+              <source media="(max-width: 767px)"
+                srcset="./images/team/img-1_sm@1x.jpg 1x, ./images/team/img-1_sm@2x.jpg 2x" />
+              <img class="team__img" src="./images/team/img-1_md@1x.jpg" alt="Фото Ігор Дем'яненко" loading="lazy" />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text"><span lang="en-GB">Product Designer</span></p>
@@ -210,7 +223,20 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/webstudio/olgarepina.jpg" alt="Фото Ольга Рєпіна" />
+
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)"
+                srcset="./images/team/img-2_lg@1x.jpg 1x, ./images/team/img-2_lg@2x.jpg 2x" />
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)"
+                srcset="./images/team/img-2_md@1x.jpg 1x, ./images/team/img-2_md@2x.jpg 2x" />
+              <!-- phone screen -->
+              <source media="(max-width: 767px)"
+                srcset="./images/team/img-2_sm@1x.jpg 1x, ./images/team/img-2_sm@2x.jpg 2x" />
+              <img class="team__img" src="./images/team/img-2_md@1x.jpg" alt="Фото Ольга Рєпіна" loading="lazy" />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__text"><span lang="en-GB">Frontend Developer</span></p>
@@ -251,7 +277,20 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/webstudio/mykolatarasov.jpg" alt="Фото Микола Тарасов" />
+
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)"
+                srcset="./images/team/img-3_lg@1x.jpg 1x, ./images/team/img-3_lg@2x.jpg 2x" />
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)"
+                srcset="./images/team/img-3_md@1x.jpg 1x, ./images/team/img-3_md@2x.jpg 2x" />
+              <!-- phone screen -->
+              <source media="(max-width: 767px)"
+                srcset="./images/team/img-3_sm@1x.jpg 1x, ./images/team/img-3_sm@2x.jpg 2x" />
+              <img class="team__img" src="./images/team/img-3_md@1x.jpg" alt="Фото Микола Тарасов" loading="lazy" />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text"><span lang="en-GB">Marketing</span></p>
@@ -292,7 +331,20 @@
             </div>
           </li>
           <li class="team__item">
-            <img class="team__img" src="./images/webstudio/mykhailoermakov.jpg" alt="Фото Михайло Єрмаков" />
+
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)"
+                srcset="./images/team/img-4_lg@1x.jpg 1x, ./images/team/img-4_lg@2x.jpg 2x" />
+              <!-- tablet screen -->
+              <source media="(min-width: 768px)"
+                srcset="./images/team/img-4_md@1x.jpg 1x, ./images/team/img-4_md@2x.jpg 2x" />
+              <!-- phone screen -->
+              <source media="(max-width: 767px)"
+                srcset="./images/team/img-4_sm@1x.jpg 1x, ./images/team/img-4_sm@2x.jpg 2x" />
+              <img class="team__img" src="./images/team/img-4_md@1x.jpg" alt="Фото Микола Тарасов" loading="lazy" />
+            </picture>
+
             <div class="team__card">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text"><span lang="en-GB">UI Designer</span></p>
