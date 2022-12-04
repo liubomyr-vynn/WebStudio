@@ -1,6 +1,9 @@
 .features {
   @extend %section;
-  // @extend %section--padding-bottom;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .features__list {
