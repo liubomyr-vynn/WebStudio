@@ -1032,9 +1032,9 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 8px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
