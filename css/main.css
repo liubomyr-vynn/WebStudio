@@ -1070,7 +1070,7 @@ img {
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  padding: 6px 22px;
+  padding: 6px 25px;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
@@ -1228,7 +1228,7 @@ img {
   display: block;
   position: relative;
   width: 450px;
-  max-height: 581px;
+  max-height: 609px;
   padding: 40px;
   background: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1244,6 +1244,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1622,7 +1623,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .mobile-contacts__item:not(:last-child) {
@@ -1636,4 +1637,9 @@ img {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+.mobile-socials__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }/*# sourceMappingURL=main.css.map */
