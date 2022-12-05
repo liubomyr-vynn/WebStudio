@@ -1625,7 +1625,8 @@ img {
   gap: 20px;
 }
 
-.mobile-contacts__item {
+.mobile-contacts__item:not(:last-child) {
+  display: block;
   margin-bottom: 32px;
 }
 
