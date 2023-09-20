@@ -1,6 +1,7 @@
 # WebStudio
 
-![WebStudio Banner](./images/Web_s.JPG)
+![WebStudio Banner](./images/Web_s.JPG) ![WebStudio Banner](./images/Web_s_f.JPG)
+![WebStudio Banner](./images/Web_s_p.JPG)
 
 This is the repository for the "WebStudio" project, which contains the website for a web design and
 development studio.
