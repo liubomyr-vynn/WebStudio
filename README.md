@@ -1,6 +1,15 @@
 # WebStudio
 
-![WebStudio Banner](./images/Web_s.JPG) ![WebStudio Banner](./images/Web_s_f.JPG)
+## 🌐 Main page
+
+![WebStudio Banner](./images/Web_s.JPG)
+
+## 🌐 Footer
+
+![WebStudio Banner](./images/Web_s_f.JPG)
+
+## 🌐 Portfolio
+
 ![WebStudio Banner](./images/Web_s_p.JPG)
 
 This is the repository for the "WebStudio" project, which contains the website for a web design and
